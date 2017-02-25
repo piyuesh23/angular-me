@@ -1,0 +1,23 @@
+.container.contact-form {
+  color: #000;
+  background-color: #fff;
+}
+
+.contact-form .page-title {
+  margin-bottom: 50px;
+}
+
+.contact-bg {
+  padding: 0;
+  margin: 0;
+}
+
+.contact-bg img{
+  padding: 0;
+  margin: 0;
+}
+
+.contact-page-wrapper {
+  overflow: hidden;
+  background-color: #fff;
+}

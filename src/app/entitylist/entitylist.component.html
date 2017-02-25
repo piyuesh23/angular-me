@@ -1,0 +1,20 @@
+<div *ngIf="isLoading">
+  Loading data..
+</div>
+<div class="container main ml-0 mr-0 w-100 posts-page" *ngIf="!isLoading">
+  <h1 class="page-title">
+    Articles
+  </h1>
+  <div class="post clearfix col-lg-12 mb-2 pl-0 pr-0" *ngFor="let t of entity; let i = index;">
+    <div class="col-lg-3 p-0 col-md-4 col-sm-12 col-xs-12">
+      <img class="default-image w-100 p-0" src="assets/img/default-post.png">
+    </div>
+    <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 content">
+      <h3 class="title">
+        {{t.title}}
+      </h3>
+      <div class="body" [innerHTML]="t.body"></div>
+    </div>
+    <a href="#" class="flex-lg-bottom col-lg-2 btn btn-primary read-more">Read More</a>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+.contributions-page {
+  display: flex;
+  width: 100%;
+  flex-flow: wrap;
+}
+
+.card {
+  color: #000;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #0275d8;
+  border-color: #0275d8;
+}
+
+.card.col-lg-3 {
+  padding: 0;
+}
+
+img.col-lg-12 {
+  padding: 0;
+  margin: 0;
+}
+
+.page-title {
+  margin-left: 15px;
+}

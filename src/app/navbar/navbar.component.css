@@ -1,0 +1,27 @@
+span.logo {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  background-size: contain;
+}
+
+.gh-logo {
+  background-image: url(assets/img/social/gh.png);
+}
+
+.fb-logo {
+  background-image: url(assets/img/social/fb.png);
+}
+
+.tw-logo {
+  background-image: url(assets/img/social/twitter.png);
+}
+
+.drupal-logo {
+  background-image: url(assets/img/social/drupal.png);
+}
+
+.navbar-nav.navbar-right a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

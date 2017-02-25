@@ -1,0 +1,15 @@
+<h1 class="page-title">
+  Contributions
+</h1>
+<div class="container contributions-page">
+  <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let t of entity; let i = index;">
+    <img class="w-100" src="assets/img/default-post.png" alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">{{t.title}}</h4>
+      <p class="card-text" [innerHTML]="t.body"></p>
+      <a href="#" class="btn btn-primary">Read More</a>
+    </div>
+  </div>
+</div>
+
+

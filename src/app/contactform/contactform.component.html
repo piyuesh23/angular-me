@@ -1,0 +1,33 @@
+<div class="contact-page-wrapper">
+  <div class="container col-sm-6 contact-bg">
+    <img class="col-sm-12" src="assets/img/contact-bg.jpg">
+  </div>
+  <div class="container col-sm-6 pull-right contact-form">
+    <h1 class="page-title">
+      Contact
+    </h1>
+
+    <form [formGroup]="form" (ngSubmit)="sendQuery()">
+      <div class="form-group row">
+        <label for="name" class="col-sm-3 col-form-label">Name</label>
+        <div class="col-sm-9">
+          <input type="text" formControlName="name" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="email" class="col-sm-3 col-form-label">Email address</label>
+        <div class="col-sm-9">
+          <input type="email" formControlName="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email" required>
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="queryTextarea" class="col-sm-3 col-form-label">Query</label>
+        <div class="col-sm-9">
+          <textarea formControlName="query" class="form-control" id="queryTextarea" rows="10" required></textarea>
+        </div>
+      </div>
+      <button [disabled]="!form.valid" type="submit" class="btn btn-primary">Send Query</button>
+    </form>
+  </div>
+</div>
