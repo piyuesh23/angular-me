@@ -5,7 +5,7 @@ import { Entity } from './entity';
 
 @Injectable()
 export class EntitylistService{
-  private baseUrl: string = 'http://training.qed42.net/api';
+  private baseUrl: string = 'https://training.qed42.net/api';
 
   constructor(private http : Http){
   }
